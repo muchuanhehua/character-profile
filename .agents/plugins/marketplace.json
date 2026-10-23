@@ -1,0 +1,20 @@
+{
+  "name": "character-profile-marketplace",
+  "interface": {
+    "displayName": "Character Profile"
+  },
+  "plugins": [
+    {
+      "name": "character-profile",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

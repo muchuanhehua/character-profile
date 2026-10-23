@@ -1,6 +1,6 @@
 {
   "name": "character-profile",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "基于官方资料和用户材料创建、修改结构化角色档案与人物模板。",
   "author": "muchuanhehua",
   "repository": {
@@ -10,18 +10,14 @@
   "type": "module",
   "exports": {
     ".": "./dsh/index.js",
-    "./package.json": "./package.json",
-    "./locale/*.json": "./dsh/locale/*.json",
-    "./icon": "./dsh/icon.svg"
+    "./package.json": "./package.json"
   },
   "files": [
-    "dsh/",
-    "skills/",
-    ".codex-plugin/"
+    "SKILL.md",
+    "agents/",
+    "references/",
+    "dsh/"
   ],
-  "scripts": {
-    "test": "node --test tests/dsh.test.js"
-  },
   "keywords": ["dsh-plugin", "agent-skills", "character-profile"],
   "dsh": {
     "bundle": {
@@ -30,10 +26,5 @@
   },
   "dependencies": {
     "yaml": "2.9.1"
-  },
-  "devDependencies": {
-    "@deepseek-ai/cordis": "4.0.5",
-    "@deepseek-ai/dsh-skill": "0.2.1-rc.2",
-    "@deepseek-ai/dsh-app-boot": "0.2.1-rc.2"
   }
 }

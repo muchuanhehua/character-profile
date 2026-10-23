@@ -6,8 +6,8 @@ import { parse } from 'yaml';
 export const name = 'character-profile';
 export const inject = ['skills'];
 
-const skillDirectory = fileURLToPath(new URL('../skills/character-profile/', import.meta.url));
-const skillPath = fileURLToPath(new URL('../skills/character-profile/SKILL.md', import.meta.url));
+const skillDirectory = fileURLToPath(new URL('../', import.meta.url));
+const skillPath = fileURLToPath(new URL('../SKILL.md', import.meta.url));
 // DSH's public bundled-provider rank lets project and user skills take precedence.
 const bundledRank = 600;
 
